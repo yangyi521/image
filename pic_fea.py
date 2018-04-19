@@ -14,7 +14,7 @@ features特征向量
 def get_features(image_path):
     current_img = cv2.imread(image_path)
     # 定义为相同大小
-    current_img = cv2.resize(current_img, (800, 800))
+    current_img = cv2.resiz(current_img, (800, 800))
     # 先转化为灰度图,然后直方图均衡化,目的是增加对比度
     gray_img = cv2.cvtColor(current_img, cv2.COLOR_BGR2GRAY)
     gray_img_hist = cv2.equalizeHist(gray_img)
